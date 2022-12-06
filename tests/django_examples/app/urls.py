@@ -1,0 +1,11 @@
+from django.urls import include, path
+
+from .views import APITestView
+
+urlpatterns = [
+    path(
+        "some-url/<int:object_pk>/",
+        APITestView.as_view(),
+        name="object-detail",
+    ),
+]
