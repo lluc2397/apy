@@ -10,12 +10,12 @@ class APITestView(View):
             The slug of the model to retrieve
         id: int
             The id or pk of the model
-    
+
     Returns
     -------
         model: object
             An instance of the model
     """
+
     def get(self, *args, **kwargs):
         return super().get(*args, **kwargs)
-
